@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            // Targets your hub by name directly, skipping the generic/unnamed discovery
+            // path that was timing out. This is the default one to use.
+            "name": "Pybricks: Run on Hub (BLE, named)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pybricksdev",
+            "args": [
+                "run",
+                "ble",
+                "--name",
+                "DGC Hub",
+                "${file}"
+            ]
+        },
+        {
+            // Wired connection instead of Bluetooth - useful for troubleshooting BLE issues,
+            // or just a more reliable connection if the hub is within USB cable reach.
+            "name": "Pybricks: Run on Hub (USB)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pybricksdev",
+            "args": [
+                "run",
+                "usb",
+                "${file}"
+            ]
+        }
+    ]
+}
