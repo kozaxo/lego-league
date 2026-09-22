@@ -15,7 +15,7 @@ def sec_to_msec(sec):
     return sec * 1000
 
 
-def initialize():
+def initialize() -> tuple[DriveBase, Motor]:
     # initialization
     left_motor = Motor(Port.A, Direction.COUNTERCLOCKWISE)
     right_motor = Motor(Port.E)
