@@ -47,7 +47,6 @@ def mission(drive_base: DriveBase, front_lift_motor: Motor, back_lift_motor: Mot
 
     drive_base.straight(inches_to_mm(-20))
 
-
     # drive_base.straight(inches_to_mm(-2))
 
     # front_lift_motor.run_target(speed=360, target_angle=275)

@@ -1,6 +1,6 @@
 from pybricks.tools import hub_menu
 
-mission = hub_menu("1", "2", "3")
+mission = hub_menu("1", "2", "3", "R")
 
 if mission == "1":
     from mission1 import main
@@ -13,6 +13,11 @@ if mission == "2":
     main()
 
 if mission == "3":
-    from lift_test import main
+    from mission3 import main
+
+    main()
+
+if mission == "R":
+    from raise_rear import main
 
     main()

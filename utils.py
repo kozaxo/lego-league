@@ -49,10 +49,9 @@ def calibrate_front_lift_motor(lift_motor):
     lift_motor.run_time(speed=-360, time=sec_to_msec(1))
     lift_motor.reset_angle(angle=0)
 
-def calibrate_rear_lift_motor(lift_motor): 
-    #lift_motor.run_time(speed=-10000, time=sec_to_msec(1))
-    #Raise the motor to the top, so it's at a known location
-    lift_motor.run_until_stalled(3000, duty_limit=20)
+
+def calibrate_rear_lift_motor(lift_motor):
+    lift_motor.run_time(speed=-3600, time=sec_to_msec(6))
     lift_motor.reset_angle(angle=0)
 
 
